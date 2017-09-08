@@ -1,0 +1,2 @@
+/home/huo/ColorOctreeViewer/build/CMakeFiles/ColorOctreeViewer.dir
+/home/huo/ColorOctreeViewer/build/CMakeFiles/color_octree_viewer.dir
