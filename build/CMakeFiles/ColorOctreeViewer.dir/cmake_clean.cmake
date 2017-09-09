@@ -1,6 +1,9 @@
 FILE(REMOVE_RECURSE
+  "CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o"
   "CMakeFiles/ColorOctreeViewer.dir/src/ParameterServer.cc.o"
+  "CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o"
   "CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o"
+  "CMakeFiles/ColorOctreeViewer.dir/src/ColorOctomap.cc.o"
   "../lib/libColorOctreeViewer.pdb"
   "../lib/libColorOctreeViewer.so"
 )

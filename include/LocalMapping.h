@@ -19,22 +19,27 @@
 #include "ParameterServer.h"
 #include "Viewer.h"
 
+class ColorOctomap;
 class Viewer;
 class LocalMapping
 {
 public:
-  LocalMapping(std::string data_path);
+  LocalMapping(std::string data,std::string param);
+  ~LocalMapping();
   
   void Run(); 
 private:
+  void mapUpdate(const cv::Mat& imRGB,const cv::Mat& imDepth,Eigen::Isometry3d pose);
+  void Stop();
+  
   float fxinv,fyinv,cx,cy;
   float depthScale;
   
-  std::string data_str;
+  std::string data_path;
+  std::string rgb_path,depth_path,gt_path;
   
-  float resolution;
-  octomap::ColorOcTree* tree_;
-  std::mutex mMutexTree;
+  ColorOctomap* mMap;
   Viewer* mViewer;
+  std::thread* mptViewer;
 };
 #endif

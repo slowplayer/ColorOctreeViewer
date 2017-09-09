@@ -33,6 +33,7 @@ private:
   
   std::string data_path;
   std::string rgb_path,depth_path,gt_path;
+  std::string ass_path;
   
   //view var.
   float mImageWidth,mImageHeight;

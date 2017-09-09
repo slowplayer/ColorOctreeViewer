@@ -8,37 +8,29 @@
 #include <octomap/ColorOcTree.h>
 #include <octomap/octomap.h>
 
-#include <mutex>
-
 #include "ParameterServer.h"
+#include "ColorOctomap.h"
 
-
+class ColorOctomap;
 class Viewer
 {
 public:
-  Viewer(octomap::ColorOcTree* tree);
+  Viewer(ColorOctomap* map);
   
   void Run();
+  void setFinish();
 private:
-  bool Stop();
+  bool checkFinish();
+  void octreeRender();
   
-  int displayLevel;
-  octomap::ColorOcTree tree_;
+  ColorOctomap* mOcTree;
   
-  double mT;
+  float mT;
   float mImageWidth,mImageHeight;
-  
-  float mViewpointX,mViewpointY,mViewpointZ,mViewpointF;
-  
-  bool CheckFinish();
-  bool SetFinish();
-  
-  bool mbFinishRequested;
-  bool mbFinished;
+  float mViewpointX,mViewpointY,mViewpointZ,mViewpointF; 
+
+  bool mFinished;
   std::mutex mMutexFinish;
-  
-  bool mbStopped;
-  bool mbStopRequested;
-  std::mutex mMutexStop;
+  octomap::ColorOcTree* tree_;
 };
 #endif

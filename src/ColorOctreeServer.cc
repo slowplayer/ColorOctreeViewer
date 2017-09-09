@@ -7,6 +7,7 @@ ColorOctreeServer::ColorOctreeServer(const std::string data,const std::string pa
   rgb_path=data_path+"rgb.txt";
   depth_path=data_path+"depth.txt";
   gt_path=data_path+"groundtruth.txt";
+  ass_path=data_path+"associations.txt";
   
   ParameterServer::instance()->setPath(param);
   
@@ -67,7 +68,7 @@ bool ColorOctreeServer::run()
   
    //d_cam.Activate(s_cam);
   
-  std::ifstream rgb_txt,depth_txt,gt_txt;
+  std::ifstream rgb_txt,depth_txt,gt_txt,ass_txt;
   std::string rgb_str,depth_str;
   Eigen::Isometry3d pose;
   Eigen::Quaterniond q;
@@ -93,18 +94,26 @@ bool ColorOctreeServer::run()
     std::cout<<"gt error"<<std::endl;
     return false;
   }
+  ass_txt.open(ass_path.c_str());
+  if(!ass_txt.is_open())
+  {
+    std::cout<<"associations error"<<std::endl;
+    return false;
+  }
  // gt_txt>>rgb_str;gt_txt>>rgb_str;gt_txt>>rgb_str;
   
   cnt=0;
   while(1)
   {
-    if(rgb_txt.eof()||depth_txt.eof()||gt_txt.eof())
+    if(rgb_txt.eof()||depth_txt.eof()||gt_txt.eof()||ass_txt.eof())
     {
       break;
     }
     std::cout<<"Image "<<++cnt<<std::endl;
-    rgb_txt>>rgb_str;rgb_txt>>rgb_str;
-    depth_txt>>depth_str;depth_txt>>depth_str;
+ //   rgb_txt>>rgb_str;rgb_txt>>rgb_str;
+ //   depth_txt>>depth_str;depth_txt>>depth_str;
+    ass_txt>>rgb_str;ass_txt>>rgb_str;
+    ass_txt>>depth_str;ass_txt>>depth_str;
     for(int i=0;i<8;i++)
       gt_txt>>data[i];
     q=Eigen::Quaterniond(data[7],data[4],data[5],data[6]);
@@ -121,6 +130,10 @@ bool ColorOctreeServer::run()
  //   std::cout<<"ready to render"<<std::endl;
     treeRender(s_cam,d_cam);
   }
+  rgb_txt.close();
+  depth_txt.close();
+  gt_txt.close();
+  ass_txt.close();
   return true;
 }
 void ColorOctreeServer::treeUpdate(const cv::Mat& imRGB, const cv::Mat& imDepth, const Eigen::Isometry3d& pose)
@@ -226,7 +239,7 @@ void ColorOctreeServer::treeRender(pangolin::OpenGlRenderState s_cam,pangolin::V
   }
   glEnd();
   pangolin::FinishFrame();
-  cv::waitKey(mT);
+ // cv::waitKey(mT);
 }
 
 

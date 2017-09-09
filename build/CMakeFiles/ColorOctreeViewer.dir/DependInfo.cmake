@@ -4,8 +4,11 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
+  "/home/huo/ColorOctreeViewer/src/ColorOctomap.cc" "/home/huo/ColorOctreeViewer/build/CMakeFiles/ColorOctreeViewer.dir/src/ColorOctomap.cc.o"
   "/home/huo/ColorOctreeViewer/src/ColorOctreeServer.cc" "/home/huo/ColorOctreeViewer/build/CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o"
+  "/home/huo/ColorOctreeViewer/src/LocalMapping.cc" "/home/huo/ColorOctreeViewer/build/CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o"
   "/home/huo/ColorOctreeViewer/src/ParameterServer.cc" "/home/huo/ColorOctreeViewer/build/CMakeFiles/ColorOctreeViewer.dir/src/ParameterServer.cc.o"
+  "/home/huo/ColorOctreeViewer/src/Viewer.cc" "/home/huo/ColorOctreeViewer/build/CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
