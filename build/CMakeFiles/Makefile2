@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/huo/ColorOctreeViewer/build
 CMakeFiles/ColorOctreeViewer.dir/all:
 	$(MAKE) -f CMakeFiles/ColorOctreeViewer.dir/build.make CMakeFiles/ColorOctreeViewer.dir/depend
 	$(MAKE) -f CMakeFiles/ColorOctreeViewer.dir/build.make CMakeFiles/ColorOctreeViewer.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huo/ColorOctreeViewer/build/CMakeFiles  1 2 3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huo/ColorOctreeViewer/build/CMakeFiles  1 2
 	@echo "Built target ColorOctreeViewer"
 .PHONY : CMakeFiles/ColorOctreeViewer.dir/all
 
@@ -69,7 +69,7 @@ all: CMakeFiles/ColorOctreeViewer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ColorOctreeViewer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/huo/ColorOctreeViewer/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/huo/ColorOctreeViewer/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ColorOctreeViewer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/huo/ColorOctreeViewer/build/CMakeFiles 0
 .PHONY : CMakeFiles/ColorOctreeViewer.dir/rule
@@ -88,38 +88,38 @@ clean: CMakeFiles/ColorOctreeViewer.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/color_octree_viewer.dir
+# Target rules for target CMakeFiles/octree_direct_viewer.dir
 
 # All Build rule for target.
-CMakeFiles/color_octree_viewer.dir/all: CMakeFiles/ColorOctreeViewer.dir/all
-	$(MAKE) -f CMakeFiles/color_octree_viewer.dir/build.make CMakeFiles/color_octree_viewer.dir/depend
-	$(MAKE) -f CMakeFiles/color_octree_viewer.dir/build.make CMakeFiles/color_octree_viewer.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huo/ColorOctreeViewer/build/CMakeFiles  4
-	@echo "Built target color_octree_viewer"
-.PHONY : CMakeFiles/color_octree_viewer.dir/all
+CMakeFiles/octree_direct_viewer.dir/all: CMakeFiles/ColorOctreeViewer.dir/all
+	$(MAKE) -f CMakeFiles/octree_direct_viewer.dir/build.make CMakeFiles/octree_direct_viewer.dir/depend
+	$(MAKE) -f CMakeFiles/octree_direct_viewer.dir/build.make CMakeFiles/octree_direct_viewer.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huo/ColorOctreeViewer/build/CMakeFiles  3
+	@echo "Built target octree_direct_viewer"
+.PHONY : CMakeFiles/octree_direct_viewer.dir/all
 
 # Include target in all.
-all: CMakeFiles/color_octree_viewer.dir/all
+all: CMakeFiles/octree_direct_viewer.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/color_octree_viewer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/huo/ColorOctreeViewer/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/color_octree_viewer.dir/all
+CMakeFiles/octree_direct_viewer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/huo/ColorOctreeViewer/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/octree_direct_viewer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/huo/ColorOctreeViewer/build/CMakeFiles 0
-.PHONY : CMakeFiles/color_octree_viewer.dir/rule
+.PHONY : CMakeFiles/octree_direct_viewer.dir/rule
 
 # Convenience name for target.
-color_octree_viewer: CMakeFiles/color_octree_viewer.dir/rule
-.PHONY : color_octree_viewer
+octree_direct_viewer: CMakeFiles/octree_direct_viewer.dir/rule
+.PHONY : octree_direct_viewer
 
 # clean rule for target.
-CMakeFiles/color_octree_viewer.dir/clean:
-	$(MAKE) -f CMakeFiles/color_octree_viewer.dir/build.make CMakeFiles/color_octree_viewer.dir/clean
-.PHONY : CMakeFiles/color_octree_viewer.dir/clean
+CMakeFiles/octree_direct_viewer.dir/clean:
+	$(MAKE) -f CMakeFiles/octree_direct_viewer.dir/build.make CMakeFiles/octree_direct_viewer.dir/clean
+.PHONY : CMakeFiles/octree_direct_viewer.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/color_octree_viewer.dir/clean
+clean: CMakeFiles/octree_direct_viewer.dir/clean
 .PHONY : clean
 
 #=============================================================================

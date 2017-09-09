@@ -112,41 +112,41 @@ ColorOctreeViewer/fast:
 .PHONY : ColorOctreeViewer/fast
 
 #=============================================================================
-# Target rules for targets named color_octree_viewer
+# Target rules for targets named octree_direct_viewer
 
 # Build rule for target.
-color_octree_viewer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 color_octree_viewer
-.PHONY : color_octree_viewer
+octree_direct_viewer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 octree_direct_viewer
+.PHONY : octree_direct_viewer
 
 # fast build rule for target.
-color_octree_viewer/fast:
-	$(MAKE) -f CMakeFiles/color_octree_viewer.dir/build.make CMakeFiles/color_octree_viewer.dir/build
-.PHONY : color_octree_viewer/fast
+octree_direct_viewer/fast:
+	$(MAKE) -f CMakeFiles/octree_direct_viewer.dir/build.make CMakeFiles/octree_direct_viewer.dir/build
+.PHONY : octree_direct_viewer/fast
 
-src/LocalMapping.o: src/LocalMapping.cc.o
-.PHONY : src/LocalMapping.o
+src/ColorOctreeServer.o: src/ColorOctreeServer.cc.o
+.PHONY : src/ColorOctreeServer.o
 
 # target to build an object file
-src/LocalMapping.cc.o:
-	$(MAKE) -f CMakeFiles/ColorOctreeViewer.dir/build.make CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o
-.PHONY : src/LocalMapping.cc.o
+src/ColorOctreeServer.cc.o:
+	$(MAKE) -f CMakeFiles/ColorOctreeViewer.dir/build.make CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o
+.PHONY : src/ColorOctreeServer.cc.o
 
-src/LocalMapping.i: src/LocalMapping.cc.i
-.PHONY : src/LocalMapping.i
+src/ColorOctreeServer.i: src/ColorOctreeServer.cc.i
+.PHONY : src/ColorOctreeServer.i
 
 # target to preprocess a source file
-src/LocalMapping.cc.i:
-	$(MAKE) -f CMakeFiles/ColorOctreeViewer.dir/build.make CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.i
-.PHONY : src/LocalMapping.cc.i
+src/ColorOctreeServer.cc.i:
+	$(MAKE) -f CMakeFiles/ColorOctreeViewer.dir/build.make CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.i
+.PHONY : src/ColorOctreeServer.cc.i
 
-src/LocalMapping.s: src/LocalMapping.cc.s
-.PHONY : src/LocalMapping.s
+src/ColorOctreeServer.s: src/ColorOctreeServer.cc.s
+.PHONY : src/ColorOctreeServer.s
 
 # target to generate assembly for a file
-src/LocalMapping.cc.s:
-	$(MAKE) -f CMakeFiles/ColorOctreeViewer.dir/build.make CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.s
-.PHONY : src/LocalMapping.cc.s
+src/ColorOctreeServer.cc.s:
+	$(MAKE) -f CMakeFiles/ColorOctreeViewer.dir/build.make CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.s
+.PHONY : src/ColorOctreeServer.cc.s
 
 src/ParameterServer.o: src/ParameterServer.cc.o
 .PHONY : src/ParameterServer.o
@@ -172,53 +172,29 @@ src/ParameterServer.cc.s:
 	$(MAKE) -f CMakeFiles/ColorOctreeViewer.dir/build.make CMakeFiles/ColorOctreeViewer.dir/src/ParameterServer.cc.s
 .PHONY : src/ParameterServer.cc.s
 
-src/Viewer.o: src/Viewer.cc.o
-.PHONY : src/Viewer.o
+src/direct.o: src/direct.cc.o
+.PHONY : src/direct.o
 
 # target to build an object file
-src/Viewer.cc.o:
-	$(MAKE) -f CMakeFiles/ColorOctreeViewer.dir/build.make CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o
-.PHONY : src/Viewer.cc.o
+src/direct.cc.o:
+	$(MAKE) -f CMakeFiles/octree_direct_viewer.dir/build.make CMakeFiles/octree_direct_viewer.dir/src/direct.cc.o
+.PHONY : src/direct.cc.o
 
-src/Viewer.i: src/Viewer.cc.i
-.PHONY : src/Viewer.i
-
-# target to preprocess a source file
-src/Viewer.cc.i:
-	$(MAKE) -f CMakeFiles/ColorOctreeViewer.dir/build.make CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.i
-.PHONY : src/Viewer.cc.i
-
-src/Viewer.s: src/Viewer.cc.s
-.PHONY : src/Viewer.s
-
-# target to generate assembly for a file
-src/Viewer.cc.s:
-	$(MAKE) -f CMakeFiles/ColorOctreeViewer.dir/build.make CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.s
-.PHONY : src/Viewer.cc.s
-
-src/main.o: src/main.cc.o
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cc.o:
-	$(MAKE) -f CMakeFiles/color_octree_viewer.dir/build.make CMakeFiles/color_octree_viewer.dir/src/main.cc.o
-.PHONY : src/main.cc.o
-
-src/main.i: src/main.cc.i
-.PHONY : src/main.i
+src/direct.i: src/direct.cc.i
+.PHONY : src/direct.i
 
 # target to preprocess a source file
-src/main.cc.i:
-	$(MAKE) -f CMakeFiles/color_octree_viewer.dir/build.make CMakeFiles/color_octree_viewer.dir/src/main.cc.i
-.PHONY : src/main.cc.i
+src/direct.cc.i:
+	$(MAKE) -f CMakeFiles/octree_direct_viewer.dir/build.make CMakeFiles/octree_direct_viewer.dir/src/direct.cc.i
+.PHONY : src/direct.cc.i
 
-src/main.s: src/main.cc.s
-.PHONY : src/main.s
+src/direct.s: src/direct.cc.s
+.PHONY : src/direct.s
 
 # target to generate assembly for a file
-src/main.cc.s:
-	$(MAKE) -f CMakeFiles/color_octree_viewer.dir/build.make CMakeFiles/color_octree_viewer.dir/src/main.cc.s
-.PHONY : src/main.cc.s
+src/direct.cc.s:
+	$(MAKE) -f CMakeFiles/octree_direct_viewer.dir/build.make CMakeFiles/octree_direct_viewer.dir/src/direct.cc.s
+.PHONY : src/direct.cc.s
 
 # Help Target
 help:
@@ -227,21 +203,18 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... ColorOctreeViewer"
-	@echo "... color_octree_viewer"
 	@echo "... edit_cache"
+	@echo "... octree_direct_viewer"
 	@echo "... rebuild_cache"
-	@echo "... src/LocalMapping.o"
-	@echo "... src/LocalMapping.i"
-	@echo "... src/LocalMapping.s"
+	@echo "... src/ColorOctreeServer.o"
+	@echo "... src/ColorOctreeServer.i"
+	@echo "... src/ColorOctreeServer.s"
 	@echo "... src/ParameterServer.o"
 	@echo "... src/ParameterServer.i"
 	@echo "... src/ParameterServer.s"
-	@echo "... src/Viewer.o"
-	@echo "... src/Viewer.i"
-	@echo "... src/Viewer.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/direct.o"
+	@echo "... src/direct.i"
+	@echo "... src/direct.s"
 .PHONY : help
 
 

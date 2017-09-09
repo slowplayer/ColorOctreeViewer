@@ -40,11 +40,9 @@ map
 string
 -
 
-/home/huo/ColorOctreeViewer/src/ColorOctreeServer.cc
+/home/huo/ColorOctreeViewer/src/direct.cc
 ColorOctreeServer.h
 /home/huo/ColorOctreeViewer/src/ColorOctreeServer.h
-boost/concept_check.hpp
--
 
 /home/huo/Downloads/Pangolin-master/build/src/include/pangolin/config.h
 

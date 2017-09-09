@@ -49,32 +49,9 @@ include CMakeFiles/ColorOctreeViewer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ColorOctreeViewer.dir/flags.make
 
-CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o: CMakeFiles/ColorOctreeViewer.dir/flags.make
-CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o: ../src/LocalMapping.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huo/ColorOctreeViewer/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o -c /home/huo/ColorOctreeViewer/src/LocalMapping.cc
-
-CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huo/ColorOctreeViewer/src/LocalMapping.cc > CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.i
-
-CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huo/ColorOctreeViewer/src/LocalMapping.cc -o CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.s
-
-CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o.requires:
-.PHONY : CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o.requires
-
-CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o.provides: CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o.requires
-	$(MAKE) -f CMakeFiles/ColorOctreeViewer.dir/build.make CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o.provides.build
-.PHONY : CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o.provides
-
-CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o.provides.build: CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o
-
 CMakeFiles/ColorOctreeViewer.dir/src/ParameterServer.cc.o: CMakeFiles/ColorOctreeViewer.dir/flags.make
 CMakeFiles/ColorOctreeViewer.dir/src/ParameterServer.cc.o: ../src/ParameterServer.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huo/ColorOctreeViewer/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huo/ColorOctreeViewer/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ColorOctreeViewer.dir/src/ParameterServer.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ColorOctreeViewer.dir/src/ParameterServer.cc.o -c /home/huo/ColorOctreeViewer/src/ParameterServer.cc
 
@@ -95,41 +72,39 @@ CMakeFiles/ColorOctreeViewer.dir/src/ParameterServer.cc.o.provides: CMakeFiles/C
 
 CMakeFiles/ColorOctreeViewer.dir/src/ParameterServer.cc.o.provides.build: CMakeFiles/ColorOctreeViewer.dir/src/ParameterServer.cc.o
 
-CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o: CMakeFiles/ColorOctreeViewer.dir/flags.make
-CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o: ../src/Viewer.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/huo/ColorOctreeViewer/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o -c /home/huo/ColorOctreeViewer/src/Viewer.cc
+CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o: CMakeFiles/ColorOctreeViewer.dir/flags.make
+CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o: ../src/ColorOctreeServer.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/huo/ColorOctreeViewer/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o -c /home/huo/ColorOctreeViewer/src/ColorOctreeServer.cc
 
-CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huo/ColorOctreeViewer/src/Viewer.cc > CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.i
+CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/huo/ColorOctreeViewer/src/ColorOctreeServer.cc > CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.i
 
-CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huo/ColorOctreeViewer/src/Viewer.cc -o CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.s
+CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/huo/ColorOctreeViewer/src/ColorOctreeServer.cc -o CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.s
 
-CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o.requires:
-.PHONY : CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o.requires
+CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o.requires:
+.PHONY : CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o.requires
 
-CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o.provides: CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o.requires
-	$(MAKE) -f CMakeFiles/ColorOctreeViewer.dir/build.make CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o.provides.build
-.PHONY : CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o.provides
+CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o.provides: CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o.requires
+	$(MAKE) -f CMakeFiles/ColorOctreeViewer.dir/build.make CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o.provides.build
+.PHONY : CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o.provides
 
-CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o.provides.build: CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o
+CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o.provides.build: CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o
 
 # Object files for target ColorOctreeViewer
 ColorOctreeViewer_OBJECTS = \
-"CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o" \
 "CMakeFiles/ColorOctreeViewer.dir/src/ParameterServer.cc.o" \
-"CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o"
+"CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o"
 
 # External object files for target ColorOctreeViewer
 ColorOctreeViewer_EXTERNAL_OBJECTS =
 
-../lib/libColorOctreeViewer.so: CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o
 ../lib/libColorOctreeViewer.so: CMakeFiles/ColorOctreeViewer.dir/src/ParameterServer.cc.o
-../lib/libColorOctreeViewer.so: CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o
+../lib/libColorOctreeViewer.so: CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o
 ../lib/libColorOctreeViewer.so: CMakeFiles/ColorOctreeViewer.dir/build.make
 ../lib/libColorOctreeViewer.so: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8
 ../lib/libColorOctreeViewer.so: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8
@@ -183,9 +158,8 @@ ColorOctreeViewer_EXTERNAL_OBJECTS =
 CMakeFiles/ColorOctreeViewer.dir/build: ../lib/libColorOctreeViewer.so
 .PHONY : CMakeFiles/ColorOctreeViewer.dir/build
 
-CMakeFiles/ColorOctreeViewer.dir/requires: CMakeFiles/ColorOctreeViewer.dir/src/LocalMapping.cc.o.requires
 CMakeFiles/ColorOctreeViewer.dir/requires: CMakeFiles/ColorOctreeViewer.dir/src/ParameterServer.cc.o.requires
-CMakeFiles/ColorOctreeViewer.dir/requires: CMakeFiles/ColorOctreeViewer.dir/src/Viewer.cc.o.requires
+CMakeFiles/ColorOctreeViewer.dir/requires: CMakeFiles/ColorOctreeViewer.dir/src/ColorOctreeServer.cc.o.requires
 .PHONY : CMakeFiles/ColorOctreeViewer.dir/requires
 
 CMakeFiles/ColorOctreeViewer.dir/clean:
